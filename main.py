@@ -1,6 +1,7 @@
 import jax
-from jax.config import config
-config.update("jax_enable_x64", True)
+# disable 64-bit mode for faster computation for now
+# from jax.config import config
+# config.update("jax_enable_x64", True)
 import jax.numpy as jnp
 from jax.flatten_util import ravel_pytree
 import src
